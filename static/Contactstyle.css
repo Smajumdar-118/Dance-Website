@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myInput{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid red;
+}
+.container{
+    min-height: 83vh;
+}
+.btn{
+    font-family: 'Raleway', sans-serif;
+    margin: 11px 0px;
+    padding: 11px 20px;
+    background-color: rgb(239, 70, 32);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 87px;
+}
+.btn:hover{
+    color: burlywood;
+}

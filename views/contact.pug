@@ -1,0 +1,30 @@
+extends base.pug 
+
+block script
+    script(src="../static/index.js")
+block style 
+    style 
+        include ../static/style.css
+        include ../static/Contactstyle.css
+block content 
+    nav#navbar 
+        ul 
+            div#logo 
+               img(src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/5feec111709f4_json_image_1609482513.webp")
+
+            li.item #[a(href="/") Home]
+            li.item #[a(href="/") About Us]
+            li.item #[a(href="/") Services]
+            li.item #[a(href="/") Class Info]
+            li.item #[a(href="/contact") Contact Us]
+    sectio  
+        h1 Contact Us
+        div.container
+            form(action="/contact" method="POST" class="myForm") 
+                input(type="text" class="myInput" name="name" placeholder="Enter Your Name")
+                input(type="number" class="myInput" name="age" placeholder="Enter Your Age")
+                input(type="email" class="myInput" name="email" placeholder="Enter Your Eamil")
+                input(type="phone" class="myInput" name="phone" placeholder="Enter Your obile No.")
+                input(type="text" class="myInput" name="address" placeholder="Enter Your Address")
+                button(class="btn")
+                    | Submit
